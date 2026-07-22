@@ -19,6 +19,7 @@ Aplikasi Computer Vision berbasis Streamlit untuk mengklasifikasikan sampah ke d
 | Jumlah gambar test | 1.233 |
 
 ## 🗂️ Struktur Proyek
+
 EcoSortVision/
 ├── app.py # Aplikasi utama Streamlit
 ├── models/
@@ -33,6 +34,7 @@ EcoSortVision/
 │ ├── train.py # Melatih model
 │ └── evaluate.py # Evaluasi performa model
 └── outputs/ # Hasil training/evaluasi (di-ignore dari git)
+
 ## 🚀 Cara Menjalankan
 
 1. **Clone repository**
