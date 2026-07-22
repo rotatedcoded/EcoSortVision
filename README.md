@@ -1,4 +1,4 @@
-﻿# ♻️ EcoSort Vision
+# ♻️ EcoSort Vision
 
 Aplikasi Computer Vision berbasis Streamlit untuk mengklasifikasikan sampah ke dalam 10 kategori menggunakan model **YOLO11 Classification**, guna membantu pengguna memilah sampah dengan lebih tepat dan mendukung praktik daur ulang.
 
@@ -20,40 +20,42 @@ Aplikasi Computer Vision berbasis Streamlit untuk mengklasifikasikan sampah ke d
 
 ## 🗂️ Struktur Proyek
 
+```
 EcoSortVision/
-├── app.py # Aplikasi utama Streamlit
+├── app.py                  # Aplikasi utama Streamlit
 ├── models/
-│ └── best.pt # Model YOLO11 hasil training (di-ignore dari git)
+│   └── best.pt              # Model YOLO11 hasil training (di-ignore dari git)
 ├── data/
-│ ├── raw/ # Dataset mentah (di-ignore dari git)
-│ └── prepared/ # Dataset yang sudah diproses (di-ignore dari git)
+│   ├── raw/                 # Dataset mentah (di-ignore dari git)
+│   └── prepared/             # Dataset yang sudah diproses (di-ignore dari git)
 ├── src/
-│ ├── download_dataset.py # Mengunduh dataset
-│ ├── inspect_dataset.py # Inspeksi/eksplorasi dataset
-│ ├── prepare_dataset.py # Praproses dataset
-│ ├── train.py # Melatih model
-│ └── evaluate.py # Evaluasi performa model
-└── outputs/ # Hasil training/evaluasi (di-ignore dari git)
+│   ├── download_dataset.py   # Mengunduh dataset
+│   ├── inspect_dataset.py    # Inspeksi/eksplorasi dataset
+│   ├── prepare_dataset.py    # Praproses dataset
+│   ├── train.py               # Melatih model
+│   └── evaluate.py            # Evaluasi performa model
+└── outputs/                  # Hasil training/evaluasi (di-ignore dari git)
+```
 
 ## 🚀 Cara Menjalankan
 
 1. **Clone repository**
-```bash
+   ```bash
    git clone https://github.com/rotatedcoded/EcoSortVision.git
    cd EcoSortVision
-```
+   ```
 
 2. **Buat virtual environment & install dependencies**
-```bash
+   ```bash
    python -m venv .venv
    .venv\Scripts\activate      # Windows
    pip install -r requirements.txt
-```
+   ```
 
 3. **Jalankan aplikasi**
-```bash
+   ```bash
    streamlit run app.py
-```
+   ```
 
 4. Buka browser ke `http://localhost:8501` dan mulai unggah gambar atau gunakan kamera.
 
